@@ -6,7 +6,7 @@
     "start": "cross-env NODE_ENV=dev npm-run-all --parallel start:app start:server",
     "start:server": "netlify-lambda serve functions",
     "build": "npm-run-all --parallel build:**",
-    "build:functions": "netlify-lambda build functions",
+    "build:functions": "netlify-lambda build functions"
   },
   "engines": {
     "node": "16.15.0"
