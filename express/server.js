@@ -20,20 +20,7 @@ router.post('/', (req, res) => {
   res.json({ postBody: req.body })
   console.log("sdafsdf")
   console.log(req.body)
-
-  client.on("message", msg => {
-    if (msg.content === "ping") {
-      msg.reply("pong");
-    }
-  })
-
 });
-
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`)
-})
-
-client.login("OTY5NjgzODA5ODk1MzI5ODgz.GqNc68.u2f5cKyqprjB-GRV-dCETpyYnKMuIoLaATJznU")
 
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', router);  // path must route to lambda
