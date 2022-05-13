@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 router.post('/', (req, res) => {
   res.json({ postBody: req.body })
-  console.log(res.json({ postBody: req.body }))
+  console.log("sdafsdf")
 });
 
 app.use(bodyParser.json());
